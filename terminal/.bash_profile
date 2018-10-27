@@ -269,7 +269,7 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
 #   -------------------------------------------------------------------
     alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
     alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-  
+
 #   cleanupLS:  Clean up LaunchServices to remove duplicates in the "Open With" menu
 #   -----------------------------------------------------------------------------------
     alias cleanupLS="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
@@ -328,4 +328,7 @@ httpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grab
 #   10. HOMEBREW (MACOS PACKAGE MANAGER)
 #   ---------------------------------------
 
-alias brewall='brew deps --tree --installed'      # brewall:  lists all homebrew packages with dependencies as tree
+alias brew-ls='brew deps --tree --installed'      # brew ls:  lists all homebrew packages with dependencies as tree
+
+# have to run this once first -->  brew tap beeftornado/rmtree
+brew-rm () { brew rmtree "$1"; }                  # brew rm:  delete a homebrew package with dependencies
