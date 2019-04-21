@@ -34,6 +34,7 @@ Terminal settings such as .bash_profile, .gitconfig and associated files are als
 - [Dash](https://kapeli.com/dash)
 - [AppCleaner](https://freemacsoft.net/appcleaner/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [PyCharm IDE](https://www.jetbrains.com/pycharm/)
 - [Anaconda](https://www.anaconda.com/)
 - [GitHub Desktop](https://desktop.github.com/)
 - [Dropbox](https://www.dropbox.com/downloading)
