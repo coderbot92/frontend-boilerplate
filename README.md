@@ -25,6 +25,14 @@ Terminal settings such as .bash_profile, .gitconfig and associated files are als
 * Clone the project
 * Open the project folder in VS Code
 
+## Git Configurations
+* The git configurations are present in the file .gitconfig in the repo root
+* Change the configurations according to your needs
+* After cloning repo the following command must be run to incorporate these configs locally:
+```bash
+$ git config --local include.path ../.gitconfig
+```
+
 ## Code Editor Consistency
 
 - [EditorConfig](http://editorconfig.org/) is used for managing consistent editor configurations across different editors that can be used in project.
